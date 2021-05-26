@@ -3,29 +3,26 @@ html{
 }
 
 #image{
-    height: 400px;
-    float: left;
+    height: auto;
+    max-width: 100%;
 }
 
 .letter{
-    float: left;
     border: 1px solid black;
-    margin: 0.3%;
-    padding: 3%;
-    width: 0.5%;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 200%;
+    padding: 20px;
+}
+
+.index-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .secretWord{
     letter-spacing: 5px;
-    padding-top: 24%;
     float: left;
-    display: block;
-}
-
-.clear{
-    clear: both;
 }
