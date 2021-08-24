@@ -23,6 +23,9 @@ html{
 }
 
 .secretWord{
+    display: flex;
+    align-items: center;
+    font-size: 200%;
     letter-spacing: 5px;
-    float: left;
+    padding-top: 30%;
 }
