@@ -29,3 +29,31 @@ html{
     letter-spacing: 5px;
     padding-top: 30%;
 }
+
+.modal-title{
+    width: 100%;
+    text-align: center;
+    font-size: 200%;
+}
+
+.radio-buttons{
+    margin: 0 auto;
+    width: 20%;
+}
+
+.divButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 2%;
+}
+
+.playButton{
+    font-size: 150%;
+    width: 15%;
+}
+
+.letter:hover{
+    cursor: pointer;
+}
