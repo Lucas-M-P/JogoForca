@@ -5,7 +5,12 @@ var modal = document.querySelector("#myModal");
 var button = document.querySelector(".playButton");
 var errors = 0;
 
-var secretWord;
+function getSecretWord(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    var randomNumber = Math.floor(Math.random() * (max - min)) + min;
+    return words[randomNumber].Word.toUpperCase();
+  }
 
 window.addEventListener("load", () => {
     modal.style.display = "block";
@@ -16,10 +21,15 @@ button.addEventListener("click", startGame);
 function startGame(event){
     event.preventDefault();
 
-    secretWord = "GALINHA";
+    secretWord = getSecretWord(0, 2000);
 
     for (let index = 0; index < secretWord.length; index++) {
-        divSecretWord.textContent += "_";
+        if(secretWord[index] == "-"){
+            divSecretWord.textContent += "-"
+        }
+        else{
+            divSecretWord.textContent += "_";
+        }
     }
     
     buttons.forEach(element => {
@@ -27,7 +37,7 @@ function startGame(event){
     });
     
     function verifyLetter(event){
-        if(secretWord.toUpperCase().includes(event.target.textContent)){
+        if(secretWord.includes(event.target.textContent)){
             correctLetter(event.target.textContent, event);
         }
         else{
