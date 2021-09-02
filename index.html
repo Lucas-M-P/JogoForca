@@ -15,7 +15,16 @@
                     <img id="image" src="images/Forca0.png">
                 </div>
                 <div class="col-9">
-                    <div class="secretWord"></div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="streak">Streak: 0</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="secretWord"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="row">
@@ -105,7 +114,7 @@
 
             <section>
                 <!-- The Modal -->
-                <div id="myModal" class="modal">
+                <div id="modalMenu" class="modal">
                     <!-- Modal content -->
                     <div class="modal-content">
                         <div class="row">
@@ -126,9 +135,27 @@
                                         <label for="Portuguese">Portuguese</label>
                                     </div> -->
                                     <div class="divButton">
-                                        <button class="playButton">Play</button>
+                                        <button class="button playButton">Play</button>
                                     </div>
                                 </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <!-- The Modal -->
+                <div id="modalEndGame" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="row">
+                            <div class="col-12">
+                                <div id="endGameTitle" class="modal-title"></div>
+                                <div id="endGameSubTitle" class="SubTitle"></div>
+                                <div class="divButton">
+                                    <button class="button buttonEndGame">Play Again</button>
+                                </div>
                             </div>
                         </div>
                     </div>
